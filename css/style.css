@@ -1,5 +1,10 @@
 body{
-    background-color: rgb(157, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    box-sizing: border-box;
 }
 
 img{
@@ -9,5 +14,26 @@ img{
 }
 
 .banner{
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pin{
+    position: absolute;
+    top: -150px;
+    left: 45%;
+    color: #fff;
+    
+}
+
+.lines{
+
+}
+
+.closed{
     
 }
