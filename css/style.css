@@ -3,14 +3,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222;
+    background-color: #1f2e33;
     box-sizing: border-box;
 }
 
 img{
-    position: absolute;
-    border: 5px solid black;
-    border-radius: 2%;
+
 }
 
 .banner{
@@ -27,13 +25,65 @@ img{
     top: -150px;
     left: 45%;
     color: #fff;
-    
 }
 
 .lines{
-
+    position: relative;
+    top: 150px;
+    background: #ccc;
 }
 
-.closed{
-    
+.lines::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 7%;
+    background-color: #ddd;
+    top: -220px;
+    transform: rotate(119deg);
+}
+
+.lines::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 34%;
+    background-color: #ddd;
+    top: -220px;
+    transform: rotate(-119deg);
+}
+
+.banner:hover{
+    transform: rotate(-10deg)
+}
+
+.banner img{
+    position: absolute;
+    width: 80px;
+    right: -40px;
+    top: -50px;
+    transform: rotate(30deg);
+}
+
+.closed h1{
+    background-color: #ccc;
+    width: 300px;
+    padding: 5px 0px;
+    margin: 18px;
+    font-family: "BBH Hegarty", sans-serif;
+    color: rgb(0, 90, 12);
+}
+
+p{
+    font-family: "PT Serif", serif;
+    color: rgb(231, 192, 16);
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    color: rgb(124, 0, 0);
 }
