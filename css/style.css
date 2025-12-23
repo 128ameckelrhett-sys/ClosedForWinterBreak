@@ -73,17 +73,23 @@ img{
     background-color: #ccc;
     width: 300px;
     padding: 5px 0px;
-    margin: 18px;
+    margin-bottom: 18px;
     font-family: "BBH Hegarty", sans-serif;
-    color: rgb(0, 90, 12);
+    text-decoration: underline;
+    color: rgb(122, 0, 0);
 }
 
-p{
+.closed p,.closed h2{
+    background-color: #fff;
+    width: 300px;
+    font-size: 35px;
+    line-height: 0.02;
+    font-family: "Playfair Display", serif;
+    text-decoration: underline;
+    color: rgb(43, 95, 0);
+}
+.closed p{
+    font-size: 15px;
     font-family: "PT Serif", serif;
     color: rgb(231, 192, 16);
-}
-
-h2{
-    font-family: "Playfair Display", serif;
-    color: rgb(124, 0, 0);
 }
